@@ -1,0 +1,42 @@
+[
+{"type":"header","version":"4.9.0.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"epiz_30541862_mainDB"},
+{"type":"table","name":"settings","database":"epiz_30541862_mainDB","data":
+[
+{"setting_id":"1","username":"admin","pcspecs_themeIndex":"2","pcspecs_filterIndex":"1","pcmanager_themeIndex":"1"},
+{"setting_id":"2","username":"awais","pcspecs_themeIndex":"0","pcspecs_filterIndex":"0","pcmanager_themeIndex":"0"},
+{"setting_id":"3","username":"aa","pcspecs_themeIndex":"0","pcspecs_filterIndex":"0","pcmanager_themeIndex":"0"},
+{"setting_id":"4","username":"aaaa","pcspecs_themeIndex":"0","pcspecs_filterIndex":"0","pcmanager_themeIndex":"0"},
+{"setting_id":"5","username":"andre","pcspecs_themeIndex":"0","pcspecs_filterIndex":"0","pcmanager_themeIndex":"0"}
+]
+}
+,{"type":"table","name":"timestamps","database":"epiz_30541862_mainDB","data":
+[
+{"timestamp_id":"1","username":"admin","cleaner_timestamp":"Monday, 30 May 2022 at 21:56","renewip_timestamp":"Not used yet","releaseip_timestamp":"Not used yet","flushdns_timestamp":"Thursday, 28 April 2022 at 15:42"},
+{"timestamp_id":"2","username":"awais","cleaner_timestamp":"Not used yet","renewip_timestamp":"Not used yet","releaseip_timestamp":"Not used yet","flushdns_timestamp":"Not used yet"},
+{"timestamp_id":"3","username":"aa","cleaner_timestamp":"Not used yet","renewip_timestamp":"Not used yet","releaseip_timestamp":"Not used yet","flushdns_timestamp":"Not used yet"},
+{"timestamp_id":"4","username":"aaaa","cleaner_timestamp":"Not used yet","renewip_timestamp":"Not used yet","releaseip_timestamp":"Not used yet","flushdns_timestamp":"Not used yet"},
+{"timestamp_id":"5","username":"andre","cleaner_timestamp":"Not used yet","renewip_timestamp":"Not used yet","releaseip_timestamp":"Not used yet","flushdns_timestamp":"Not used yet"}
+]
+}
+,{"type":"table","name":"users","database":"epiz_30541862_mainDB","data":
+[
+{"ID":"1","username":"admin","password":"d033e22ae348aeb5660fc2140aec35850c4da997"},
+{"ID":"2","username":"awais","password":"e62beeaeeb63160e1b4000b468bae8786072ff16"},
+{"ID":"3","username":"aa","password":"a0f1490a20d0211c997b44bc357e1972deab8ae3"},
+{"ID":"4","username":"aaaa","password":"f7a9e24777ec23212c54d7a350bc5bea5477fdbb"},
+{"ID":"5","username":"andre","password":"02e0a999c50b1f88df7a8f5a04e1b76b35ea6a88"}
+]
+}
+,{"type":"table","name":"win32classes","database":"epiz_30541862_mainDB","data":
+[
+{"class_id":"1","username":"awais","class":"Win32_Printer"},
+{"class_id":"3","username":"admin","class":"Win32_Printer"},
+{"class_id":"4","username":"admin","class":"Win32_VideoController"},
+{"class_id":"5","username":"admin","class":"Win32_VideoController"},
+{"class_id":"6","username":"admin","class":"Win32_Printer"},
+{"class_id":"7","username":"admin","class":"Win32_Printer"},
+{"class_id":"8","username":"admin","class":"Win32_Printer"}
+]
+}
+]

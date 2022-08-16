@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.0.1
+- https://www.phpmyadmin.net
+-
+- Host: sql106.epizy.com
+- Generation Time: May 30, 2022 at 08:01 PM
+- Server version: 10.3.27-MariaDB
+- PHP Version: 7.2.22
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="epiz_30541862_mainDB" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="settings">
+                CREATE TABLE `settings` (
+                  `setting_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(50) NOT NULL,
+                  `pcspecs_themeIndex` int(11) NOT NULL,
+                  `pcspecs_filterIndex` int(11) NOT NULL,
+                  `pcmanager_themeIndex` int(11) NOT NULL,
+                  PRIMARY KEY (`setting_id`),
+                  KEY `username` (`username`),
+                  CONSTRAINT `settings_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`) ON DELETE CASCADE ON UPDATE CASCADE
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="timestamps">
+                CREATE TABLE `timestamps` (
+                  `timestamp_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(50) NOT NULL,
+                  `cleaner_timestamp` varchar(50) NOT NULL DEFAULT 'Not used yet',
+                  `renewip_timestamp` varchar(50) NOT NULL DEFAULT 'Not used yet',
+                  `releaseip_timestamp` varchar(50) NOT NULL DEFAULT 'Not used yet',
+                  `flushdns_timestamp` varchar(50) NOT NULL DEFAULT 'Not used yet',
+                  PRIMARY KEY (`timestamp_id`),
+                  KEY `username` (`username`),
+                  CONSTRAINT `timestamps_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`) ON DELETE CASCADE ON UPDATE CASCADE
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(50) NOT NULL,
+                  `password` varchar(255) NOT NULL,
+                  PRIMARY KEY (`ID`),
+                  UNIQUE KEY `username` (`username`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="win32classes">
+                CREATE TABLE `win32classes` (
+                  `class_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(50) NOT NULL,
+                  `class` varchar(100) NOT NULL,
+                  PRIMARY KEY (`class_id`),
+                  KEY `username` (`username`),
+                  CONSTRAINT `win32classes_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`) ON DELETE CASCADE ON UPDATE CASCADE
+                ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'epiz_30541862_mainDB'
+    -->
+    <database name="epiz_30541862_mainDB">
+        <!-- Table settings -->
+        <table name="settings">
+            <column name="setting_id">1</column>
+            <column name="username">admin</column>
+            <column name="pcspecs_themeIndex">2</column>
+            <column name="pcspecs_filterIndex">1</column>
+            <column name="pcmanager_themeIndex">1</column>
+        </table>
+        <table name="settings">
+            <column name="setting_id">2</column>
+            <column name="username">awais</column>
+            <column name="pcspecs_themeIndex">0</column>
+            <column name="pcspecs_filterIndex">0</column>
+            <column name="pcmanager_themeIndex">0</column>
+        </table>
+        <table name="settings">
+            <column name="setting_id">3</column>
+            <column name="username">aa</column>
+            <column name="pcspecs_themeIndex">0</column>
+            <column name="pcspecs_filterIndex">0</column>
+            <column name="pcmanager_themeIndex">0</column>
+        </table>
+        <table name="settings">
+            <column name="setting_id">4</column>
+            <column name="username">aaaa</column>
+            <column name="pcspecs_themeIndex">0</column>
+            <column name="pcspecs_filterIndex">0</column>
+            <column name="pcmanager_themeIndex">0</column>
+        </table>
+        <table name="settings">
+            <column name="setting_id">5</column>
+            <column name="username">andre</column>
+            <column name="pcspecs_themeIndex">0</column>
+            <column name="pcspecs_filterIndex">0</column>
+            <column name="pcmanager_themeIndex">0</column>
+        </table>
+        <!-- Table timestamps -->
+        <table name="timestamps">
+            <column name="timestamp_id">1</column>
+            <column name="username">admin</column>
+            <column name="cleaner_timestamp">Monday, 30 May 2022 at 21:56</column>
+            <column name="renewip_timestamp">Not used yet</column>
+            <column name="releaseip_timestamp">Not used yet</column>
+            <column name="flushdns_timestamp">Thursday, 28 April 2022 at 15:42</column>
+        </table>
+        <table name="timestamps">
+            <column name="timestamp_id">2</column>
+            <column name="username">awais</column>
+            <column name="cleaner_timestamp">Not used yet</column>
+            <column name="renewip_timestamp">Not used yet</column>
+            <column name="releaseip_timestamp">Not used yet</column>
+            <column name="flushdns_timestamp">Not used yet</column>
+        </table>
+        <table name="timestamps">
+            <column name="timestamp_id">3</column>
+            <column name="username">aa</column>
+            <column name="cleaner_timestamp">Not used yet</column>
+            <column name="renewip_timestamp">Not used yet</column>
+            <column name="releaseip_timestamp">Not used yet</column>
+            <column name="flushdns_timestamp">Not used yet</column>
+        </table>
+        <table name="timestamps">
+            <column name="timestamp_id">4</column>
+            <column name="username">aaaa</column>
+            <column name="cleaner_timestamp">Not used yet</column>
+            <column name="renewip_timestamp">Not used yet</column>
+            <column name="releaseip_timestamp">Not used yet</column>
+            <column name="flushdns_timestamp">Not used yet</column>
+        </table>
+        <table name="timestamps">
+            <column name="timestamp_id">5</column>
+            <column name="username">andre</column>
+            <column name="cleaner_timestamp">Not used yet</column>
+            <column name="renewip_timestamp">Not used yet</column>
+            <column name="releaseip_timestamp">Not used yet</column>
+            <column name="flushdns_timestamp">Not used yet</column>
+        </table>
+        <!-- Table users -->
+        <table name="users">
+            <column name="ID">1</column>
+            <column name="username">admin</column>
+            <column name="password">d033e22ae348aeb5660fc2140aec35850c4da997</column>
+        </table>
+        <table name="users">
+            <column name="ID">2</column>
+            <column name="username">awais</column>
+            <column name="password">e62beeaeeb63160e1b4000b468bae8786072ff16</column>
+        </table>
+        <table name="users">
+            <column name="ID">3</column>
+            <column name="username">aa</column>
+            <column name="password">a0f1490a20d0211c997b44bc357e1972deab8ae3</column>
+        </table>
+        <table name="users">
+            <column name="ID">4</column>
+            <column name="username">aaaa</column>
+            <column name="password">f7a9e24777ec23212c54d7a350bc5bea5477fdbb</column>
+        </table>
+        <table name="users">
+            <column name="ID">5</column>
+            <column name="username">andre</column>
+            <column name="password">02e0a999c50b1f88df7a8f5a04e1b76b35ea6a88</column>
+        </table>
+        <!-- Table win32classes -->
+        <table name="win32classes">
+            <column name="class_id">1</column>
+            <column name="username">awais</column>
+            <column name="class">Win32_Printer</column>
+        </table>
+        <table name="win32classes">
+            <column name="class_id">3</column>
+            <column name="username">admin</column>
+            <column name="class">Win32_Printer</column>
+        </table>
+        <table name="win32classes">
+            <column name="class_id">4</column>
+            <column name="username">admin</column>
+            <column name="class">Win32_VideoController</column>
+        </table>
+        <table name="win32classes">
+            <column name="class_id">5</column>
+            <column name="username">admin</column>
+            <column name="class">Win32_VideoController</column>
+        </table>
+        <table name="win32classes">
+            <column name="class_id">6</column>
+            <column name="username">admin</column>
+            <column name="class">Win32_Printer</column>
+        </table>
+        <table name="win32classes">
+            <column name="class_id">7</column>
+            <column name="username">admin</column>
+            <column name="class">Win32_Printer</column>
+        </table>
+        <table name="win32classes">
+            <column name="class_id">8</column>
+            <column name="username">admin</column>
+            <column name="class">Win32_Printer</column>
+        </table>
+    </database>
+</pma_xml_export>

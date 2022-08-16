@@ -1,0 +1,68 @@
+body {
+    min-height: 100vh;
+    height: 100%;
+    color: white;
+}
+
+.welcome-text { 
+    text-align: center;
+}
+
+.panel-holder {
+    background-color: transparent;
+    max-width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    height: 100%;
+}
+
+.panel {
+    background-color: rgba(23, 33, 77, .15);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.panel-title {
+    color: white;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    padding-bottom: 20px;
+    border-bottom:1px solid #7a7a7a31;
+    margin:0px;
+}
+
+.settings h4 {
+    margin: 0;
+}
+
+.information {
+    font-size: 1.5vw;
+}
+
+.information h6{
+    text-align: left;
+    margin: 10px;
+}
+
+.information-text { 
+    font-size: 15px;
+    margin: 5px;
+    text-decoration: underline;
+}
+
+.information ul {  
+    list-style-type: none;
+}
+
+.information ul li h6 {
+    margin-top: 10px;
+    margin-left: -40px;
+    text-align: center;
+    list-style-type: none;
+}
